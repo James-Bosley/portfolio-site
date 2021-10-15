@@ -8,11 +8,86 @@
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
         <link href='https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100;200;400&display=swap' rel='stylesheet'>
         <script src='resources/scripts/script.js' defer></script>
-        <script src="https://kit.fontawesome.com/b46ce74bee.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b46ce74bee.js" crossorigin="anonymous" async></script>
     </head>
     <body>
-        <div>
-            
+        <div class='grid-container' id='page-container' role='presentation'>
+            <header class='grid-container' id='header-container'>
+                <div id='title' role='presentation'>
+                    <h1>James Bosley</h1>
+                    <h3>Portfolio</h3>
+                </div>
+                <nav id='nav-bar'>
+                    <ul id='nav'>
+                        <li><a href='#about-me' class='button'>About Me</a></li>
+                        <li><a href='#projects' class='button'>Projects</a></li>
+                        <li><a href='./contact.html' class='button'>Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <article id='about-me'>
+                <h2>About Me</h2><hr>
+                <p>Hi, I'm James! I'm currently educating myself to become a Software Developer.<br>Earlier this year I decided to make a career change. 
+                    Having spent the last decade managing supermarkets, I decided to pivot and start training to get into the industy working at the cutting edge.<br>I bring with me 
+                    a wealth of management experience and enthusiasm when it comes to learning new technical skills. Thanks to Codecademy, my knowledge is growing FAST!<br>
+                    I'm looking forward to getting stuck in to my first real project and if you think I could be useful to you, please visit my contact page and get in touch. 
+                </p>
+            </article>
+            <img src='resources/jb-shot.jpg' alt='Photo of James' title='James Bosley' id='jb-img'>
+            <section id='skills'>
+                <h2>Skills</h2><hr>
+                <div class='grid-container' id='skill-icon-container' role='presentation'>
+                    <i class="fab fa-html5" title='HTML5'></i>
+                    <i class="fab fa-css3-alt" title='CSS3'></i>
+                    <i class="fab fa-js-square" title='JavaScript'></i>
+                    <i class="fab fa-python" title='Python'></i>
+                    <i class="fab fa-git" title='Git'></i>
+                    <i class="fab fa-github" title='GitHub'></i>  
+                </div>
+            </section>
+            <section class='grid-container' id='projects'>
+                <h2>Projects</h2><hr>
+                <div class='flex-box' role='presentation'>
+                    <div class='project-box-collapsed grid-container'>
+                        <h4>"Hello, World!"</h4>
+                        <i class="fas fa-angle-down" id='1-title'></i>
+                        <div id='projectA'>
+                            <p>My very first line of code (if you exclude teenage James's attempt at a MySpace page!) was the classic "Hello, World!" print 
+                                to console. I took a Python course in my spare time during 2020, and it was this that cemented my desire to become a 
+                                Software Engineer.</p>
+                            <img src='resources/py-ss.jpg' alt='My first code'>
+                        </div>
+                    </div>
+                    <div class='project-box-collapsed grid-container'>
+                        <h4>Python | Noughts & Crosses</h4>
+                        <i class="fas fa-angle-down" id='2-title'></i>
+                        <div id='projectB'>
+                            <p>The first interactive 'thing' I made was a simple noughts and crosses game you can play against the computer. I made it using Python 3 as part of 
+                                course with edube.net. You can have a look at the code below. Press play to have a go!<br></p>
+                            <iframe src="https://trinket.io/embed/python/0e0f7ca5a6" width="98%" height="350" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class='project-box-collapsed grid-container'>
+                        <h4>First Website - Sports Club</h4>
+                        <i class="fas fa-angle-down" id='3-title'></i>
+                        <div id='projectC'>
+                            <p><a href='#' class='button'>Click Here</a> to see my first website created from scratch. It's not interactive, or particularly interesting...
+                            but it's all mine!</p>
+                        </div>
+                    </div>
+                    <div class='project-box-collapsed grid-container'>
+                        <h4>First Javascript Project</h4>
+                        <i class="fas fa-angle-down" id='4-title'></i>
+                        <div id='projectD'>
+                            <p>My first JavaScript objects...</p>
+                            <img src='resources/js-ss.jpg' alt='My first JavaScript'>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+        <footer id='footer-container'>
+            <h4>James Bosley - Portfolio Site 2021 - <a href='#' class='button'>Main</a> - <a href='contact.html' class='button'>Contact</a></h4>
+        </footer>
     </body>
 </html>

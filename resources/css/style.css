@@ -1,0 +1,192 @@
+/* Whole page styling */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Raleway,'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-image: url('../pexels-lorenzo-242236.jpg');  
+    line-height: 1.5rem; 
+}
+
+.grid-container {
+    display: grid;    
+}
+
+#page-container {
+    grid-template-columns: 10% 500px 500px auto;
+    grid-template-rows: auto 500px 200px auto;
+    grid-gap: 20px;
+}
+
+/* Header styles */
+
+#header-container {
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(10, 10%);
+    align-items: center;
+}
+
+#title {
+    grid-column: 1 / span 4;
+    margin: 20px 0;
+}
+
+#nav-bar {
+    grid-column: 7 / span 4;
+    justify-self: end;
+}
+
+#nav li{
+    display: inline;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 33%;
+    height: 0px;
+    margin: 10px auto;    
+}
+
+.button {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+/* Article styles */
+
+#about-me {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#jb-img {
+    grid-area: 2 / 3 / span 1 / span 1;
+    height: 400px;
+    width: auto;
+    justify-self: end;
+    align-self: center;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+#skills {
+    grid-area: 3 / 2 / span 1 / span 2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#projects {
+    grid-area: 4 / 2 / span 1 / span 2;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto 30px auto;
+    margin-top: 20px;
+}
+
+#contact-container {
+    grid-area: 2 / 2 / span 1 / span 2;
+}
+
+/* Skill icons */
+
+#skill-icon-container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    right: 15px;
+}
+
+#skill-icon-container i {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+
+/* Project box styles */
+
+.flex-box {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+#projects h2 {
+    grid-area: 1 / 2 / span 1 / span 1;
+    text-align: center;
+}
+
+#projects hr {
+    grid-area: 2 / 1 / span 1 / span 3;
+    align-self: center;
+}
+
+.project-box-collapsed {
+    padding: 10px 10px 10px 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #545454;
+    border-radius: 10px;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.fas,
+.fab {
+    justify-self: end;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    transition: transform 0.7s;
+}
+
+.project-box-collapsed div {
+    display: none;
+    margin-top: 10px;
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+#projectA img,
+#projectD img {
+    display: block;
+    margin: 10px auto;
+}
+
+#projectB iframe {
+    display: block;
+    margin: 10px auto;
+    position: relative;
+    right: 5px;
+}
+
+#projectC .button {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+#projectD {
+    overflow-x: scroll;
+}
+
+/* Footer styles */
+
+footer {
+    margin: 10px 10%;
+    padding-top: 30px;
+}
+
+footer .button {
+    font-size: 18px;
+}
