@@ -17,8 +17,8 @@ html {
 }
 
 #page-container {
-    grid-template-columns: 10% 500px 500px auto;
-    grid-template-rows: auto 500px 200px auto;
+    grid-template-columns: 10% minmax(auto, 500px) minmax(auto, 500px) auto;
+    grid-template-rows: auto minmax(500px, auto) minmax(200px, auto) auto;
     grid-gap: 20px;
 }
 
@@ -189,4 +189,28 @@ footer {
 
 footer .button {
     font-size: 18px;
+}
+
+/* Media query resizing */
+
+@media only screen and (max-width: 1100px) {
+    #page-container{
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(4, auto);
+    }
+    #jb-img {
+        display: none;
+    }
+    #about-me {
+        grid-area: 2 / 2 / span 1 / span 2;
+    }    
+    .flex-box {
+        grid-area: 3 / 1 / span 1 / span 3;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #nav-bar {
+        grid-column: 5 / span 6;
+    }
 }
