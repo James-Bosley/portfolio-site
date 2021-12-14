@@ -180,6 +180,12 @@ hr {
     overflow-x: scroll;
 }
 
+#projectE .button {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
 /* Footer styles */
 
 footer {
