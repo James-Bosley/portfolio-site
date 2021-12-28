@@ -103,7 +103,7 @@ hr {
 /* Skill icons */
 
 #skill-icon-container {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 100px;
     align-items: center;
     margin-top: 20px;
@@ -170,20 +170,13 @@ hr {
     right: 5px;
 }
 
-#projectC .button {
-    color: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-#projectD {
-    overflow-x: scroll;
-}
-
+#projectC .button,
+#projectD .button,
 #projectE .button {
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
+    text-decoration: underline;
 }
 
 /* Footer styles */
