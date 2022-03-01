@@ -1,10 +1,10 @@
-function exposeDetail (event) {
-    if (event.target.nextElementSibling.style.display !== 'block') {
-        event.target.nextElementSibling.style.display = 'block';
-        event.target.style.transform = 'rotate(180deg)'
+function exposeDetail ({ target }) {
+    if (target.nextElementSibling.style.display !== 'block') {
+        target.nextElementSibling.style.display = 'block';
+        target.style.transform = 'rotate(180deg)'
     } else {
-        event.target.nextElementSibling.style.display = 'none';
-        event.target.style.transform = ''
+        target.nextElementSibling.style.display = 'none';
+        target.style.transform = ''
     }
 }
 
