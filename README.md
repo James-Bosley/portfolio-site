@@ -6,4 +6,4 @@ This site has been created to showcase projects developed as part of my learning
 
 ## ##Technologies:
 
-I will be using HTML, CSS and Javascript to create this page.
+I will be using HTML, CSS and Javascript to create this page. Another test.
